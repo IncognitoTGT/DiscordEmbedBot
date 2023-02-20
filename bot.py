@@ -1,6 +1,10 @@
 import discord
 from discord.ext import commands
 from discord_slash import SlashCommand, SlashContext
+import os
+from dotenv import load_dotenv
+
+load_dotenv() # load variables from the .env file
 
 bot = commands.Bot(command_prefix='', intents=discord.Intents.all())
 slash = SlashCommand(bot, sync_commands=True)
@@ -11,7 +15,9 @@ COLORS = {
     "yellow": 0xffff00,
     "green": 0x00ff00,
     "blue": 0x0000ff,
-    "purple": 0x800080
+    "purple": 0x800080,
+    "white": 0xffffff,
+    "black": 0x000000
 }
 
 @slash.slash(name="embed",
@@ -58,6 +64,14 @@ COLORS = {
                          {
                              "name": "Purple",
                              "value": "purple"
+                         },
+                         {
+                             "name": "White",
+                             "value": "white"
+                         },
+                         {
+                             "name": "Black",
+                             "value": "black"
                          }
                      ]
                  }
@@ -69,4 +83,5 @@ async def _embed(ctx: SlashContext, title: str, description: str, color: str):
     embed = discord.Embed(title=title, description=description, color=COLORS[color.lower()])
     await ctx.send(embed=embed)
 
-bot.run(os.getenv('DISCORD_TOKEN'))
+TOKEN = os.getenv('DISCORD_BOT_TOKEN')
+bot.run(TOKEN)
