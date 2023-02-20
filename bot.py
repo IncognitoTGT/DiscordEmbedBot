@@ -69,4 +69,4 @@ async def _embed(ctx: SlashContext, title: str, description: str, color: str):
     embed = discord.Embed(title=title, description=description, color=COLORS[color.lower()])
     await ctx.send(embed=embed)
 
-bot.run('your-bot-token-here')
+bot.run(os.getenv('DISCORD_TOKEN'))
