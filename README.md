@@ -8,7 +8,6 @@ To use the bot, invite it to your Discord server using this link:
 
   [Invite](https://discord.com/api/oauth2/authorize?client_id=1074009731397595246&permissions=2733747207232&scope=bot)
 
-Replace `YOUR_CLIENT_ID_HERE` with the client ID of your Discord bot. You can obtain this value from the Discord Developer Portal.
 Once the bot is in your server, you can send an embed by typing the following slash command:
 
 	`/embed <title> <description> <color>`
