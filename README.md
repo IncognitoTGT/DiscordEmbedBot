@@ -36,7 +36,7 @@ Create a file named .env in the project directory, and add the following line:
 ```DISCORD_TOKEN=your-bot-token-here```
 
 Replace your-bot-token-here with your bot's token.
-     6. Run the bot using `python3 bot.py.`
+     6. Run the bot using `python3 bot.py`
 
 You can modify the code in bot.py to add new features or modify existing ones. Make sure to test your changes thoroughly before submitting a pull request.
 ## Credits
