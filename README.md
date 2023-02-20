@@ -36,10 +36,9 @@ If you want to modify or contribute to the Embed Bot, you can follow these steps
 	
 	4. Obtain your bot's token from the Discord Developer Portal.
 	
-	5. Create a file named .env in the project directory, and add the following line:
+	5. Edit the file named .env in the project directory, and add your bot token as such:
 	
-	
-```DISCORD_TOKEN=your-bot-token-here```
+	`DISCORD_TOKEN=your-bot-token-here`
 
 	6. Replace your-bot-token-here with your bot's token.
 
