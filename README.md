@@ -28,6 +28,7 @@ Here's an example of how to use the command:
 
 ## Development
 If you want to modify or contribute to the Embed Bot, you can follow these steps:
+
 	1. Clone this repository to your local machine.
 	
 	2. Install the required dependencies using `pip install -r requirements.txt.`.
