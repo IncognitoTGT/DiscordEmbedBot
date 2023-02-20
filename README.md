@@ -29,15 +29,16 @@ Here's an example of how to use the command:
 ## Development
 If you want to modify or contribute to the Embed Bot, you can follow these steps:
 Clone this repository to your local machine.
-Install the required dependencies using `pip install -r requirements.txt.`
-Create a new Discord application and bot account in the Discord Developer Portal.
-Obtain your bot's token from the Discord Developer Portal.
-Create a file named .env in the project directory, and add the following line:
+	1. Install the required dependencies using `pip install -r requirements.txt.`
+	2. Create a new Discord application and bot account in the Discord Developer Portal.
+	3. Obtain your bot's token from the Discord Developer Portal.
+	4. Create a file named .env in the project directory, and add the following line:
+	
 ```DISCORD_TOKEN=your-bot-token-here```
 
-Replace your-bot-token-here with your bot's token.
+	5. Replace your-bot-token-here with your bot's token.
 
-     6. Run the bot using `python3 bot.py`
+	6. Run the bot using `python3 bot.py`
 
 You can modify the code in bot.py to add new features or modify existing ones. Make sure to test your changes thoroughly before submitting a pull request.
 ## Credits
