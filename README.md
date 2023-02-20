@@ -41,7 +41,7 @@ Replace your-bot-token-here with your bot's token.
 You can modify the code in bot.py to add new features or modify existing ones. Make sure to test your changes thoroughly before submitting a pull request.
 ## Credits
 Embed Bot was created by ChatGPT with modifications by ma-ttp. It uses the following libraries:
-`discord.py`
+`discord.py`,
 `discord-py-slash-command`
-License
+## License
 This project is licensed under the MIT License.
