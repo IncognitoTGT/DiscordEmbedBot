@@ -34,13 +34,13 @@ Also, you can change `name="+embed"))` to another status.
 
 Change the following 2 lines to the new prefix, along with the status.
 
-```
+```python
 # Define bot prefix
 bot_prefix = "+"
 ```
 and 
 
-```
+```python
 # Create bot client
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix='+', intents=intents)
