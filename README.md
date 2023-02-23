@@ -8,8 +8,9 @@ To start, just type `+embed` and it'll walk you through!
 
 To self host, make sure that you have pip3. Once you do, clone the repo (`git clone https://github.com/ma-ttp/DiscordEmbedSender`). Then, do the following things: 
 
-On Mac, run `swiftc setup.swift` in a terminal.
+On Mac, run `swift setup.swift` in a terminal.
 On Windows, click `setup.bat` in a terminal.
+Linux users are smart enough (yes I do know how to use it so no bashing)
 
 Enter your bot token, and it's setup!
 
