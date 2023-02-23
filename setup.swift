@@ -1,22 +1,18 @@
 import Foundation
 print("Installing and updating discord.py")
 // install code, written by ma-ttp
-#!/usr/bin/env swift
 
-import Foundation
 
 @discardableResult
 func shell(_ args: String...) -> Int32 {
     let task = Process()
-    task.launchPath = "/usr/bin/env"
+    task.launchPath = "/bin/bash"
     task.arguments = args
     task.launch()
-    task.waitUntilExit()
+    shell("pip3 install discord.py")
     return task.terminationStatus
 }
 
-shell("ls")
-shell("xcodebuild", "-workspace", "myApp.xcworkspace")
 // Read the contents of the bot.py file
 var fileURL = URL(fileURLWithPath: "bot.py")
 var fileContents = try String(contentsOf: fileURL)
