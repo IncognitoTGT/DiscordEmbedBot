@@ -12,7 +12,7 @@ bot = commands.Bot(command_prefix='+', intents=intents)
 # Set up custom status
 @bot.event
 async def on_ready():
-    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="+embed"))
+    await bot.change_presence(status=discord.Status.online,activity=discord.Activity(type=discord.ActivityType.listening, name="+embed"))
 
 # Set up color picker reaction options
 color_emojis = ["🟥", "🟧", "🟨", "🟩", "🟦", "🟪"]
@@ -91,5 +91,5 @@ async def embed(ctx):
     await ctx.channel.purge(limit=6)
 
 # Run bot with your bot token
-bot.run("token is here")
+bot.run("token_is_here")
 

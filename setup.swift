@@ -22,7 +22,7 @@ print("Please enter your bot token:")
 let token = readLine(strippingNewline: true)
 
 // Replace the placeholder token in the file contents with the user's token
-fileContents = fileContents.replacingOccurrences(of: "token is here", with: token!)
+fileContents = fileContents.replacingOccurrences(of: "token_is_here", with: token!)
 
 // Write the modified contents back to the bot.py file
 try fileContents.write(to: fileURL, atomically: true, encoding: .utf8)
