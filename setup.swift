@@ -1,22 +1,22 @@
 import Foundation
 print("Installing and updating discord.py")
 // install code, written by ma-ttp
-func shell(_ launchPath: String, _ arguments: [String]) -> String?
-{
+#!/usr/bin/env swift
+
+import Foundation
+
+@discardableResult
+func shell(_ args: String...) -> Int32 {
     let task = Process()
-    task.launchPath = launchPath
-    task.arguments = arguments
-
-    let pipe = Pipe()
-    task.standardOutput = pipe
+    task.launchPath = "/usr/bin/env"
+    task.arguments = args
     task.launch()
-
-    let data = pipe.fileHandleForReading.readDataToEndOfFile()
-    let output = String(data: data, encoding: String.Encoding.utf8)
-
-    return output
-    shell("pip3 install discord.py")
+    task.waitUntilExit()
+    return task.terminationStatus
 }
+
+shell("ls")
+shell("xcodebuild", "-workspace", "myApp.xcworkspace")
 // Read the contents of the bot.py file
 var fileURL = URL(fileURLWithPath: "bot.py")
 var fileContents = try String(contentsOf: fileURL)
