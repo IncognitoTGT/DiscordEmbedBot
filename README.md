@@ -18,10 +18,34 @@ To run it, enter `python3 bot.py` in a terminal.
 
 ## Advanced options
 
+### Status
+
 You can change your bot's status simply by modifying the line of code below:
 
-```
+```python
 await bot.change_presence(status=discord.Status.online,activity=discord.Activity(type=discord.ActivityType.listening, name="+embed"))
 ```
 
 Modify `status=discord.Status.online` to something such as `status=discord.Status.idle`. See [here](https://dev.to/tejasdev/adding-discord-bot-status-with-python-a2a) for more.
+
+Also, you can change `name="+embed"))` to another status. 
+
+### Prefix
+
+Change the following 2 lines to the new prefix, along with the status.
+
+```
+# Define bot prefix
+bot_prefix = "+"
+```
+and 
+
+```
+# Create bot client
+intents = discord.Intents.all()
+bot = commands.Bot(command_prefix='+', intents=intents)
+```
+
+
+
+
