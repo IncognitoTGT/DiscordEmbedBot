@@ -1,12 +1,19 @@
 import discord
 from discord.ext import commands
+client = discord.Client
 
 # Define bot prefix
 bot_prefix = "+"
-
+ 
 # Create bot client
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix='+', intents=intents)
+
+# Set up custom status
+@bot.event
+async def on_ready():
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="+embed"))
+
 # Set up color picker reaction options
 color_emojis = ["🟥", "🟧", "🟨", "🟩", "🟦", "🟪"]
 color_map = {
