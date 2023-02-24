@@ -1,6 +1,6 @@
 # DiscordEmbedSender
 
-![logo](/logo.png)
+![logo](/logo.svg)
 
 
 
