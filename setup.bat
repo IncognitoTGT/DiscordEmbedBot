@@ -1,6 +1,8 @@
 @echo off
 echo installing and updating discord.py
 
+pip3 install discord.py
+
 set /p token=Enter your bot token:
 
 setlocal EnableDelayedExpansion
