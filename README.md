@@ -1,4 +1,4 @@
-# DiscordEmbedSender
+# DiscordEmbedBot
 
 ![logo](/logo.png)
 
